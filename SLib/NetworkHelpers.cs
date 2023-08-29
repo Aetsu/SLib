@@ -89,7 +89,7 @@ namespace SLib
             try
             {
                 ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12;
-                HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://www.maxmind.com/geoip/v2.1/city/me?");
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://geoip.maxmind.com/geoip/v2.1/city/me?");
                 request.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
                 request.UserAgent = "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.1; rv:11.3) like Gecko";
                 request.Referer = "https://www.maxmind.com/en/locate-my-ip-address";
